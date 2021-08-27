@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Index2";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+    string fullname = Context.Session.GetString("fullname");
+}
+    <div class="card">
+        <div class="card-header alert-primary">
+            <h2>Hoşgeldiniz</h2>            
+        </div>
+        <div class="card-body">
+            <h3 class="modal-header">@fullname</h3>
+            @if (ViewBag.score != null)
+            { 
+                    <h5>Eski Puanınız:</h5>
+                    <h5>@ViewBag.score</h5>               
+            }
+            <br />
+            <form method="post">
+                <div style="text-align:center">
+                    <button class="btn btn-info" type="submit" name="deger" value=true>Sınava Başla</button>
+                </div>
+            </form>
+
+        </div>
+        
+    </div>

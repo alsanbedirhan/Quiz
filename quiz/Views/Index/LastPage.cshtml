@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Index5";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div style="text-align:end;margin:2px;padding:2px;">
+    <a class="btn btn-dark" href="/Login/Logout">Çıkış</a>
+</div>
+
+@if (ViewBag.adam > 1)
+{
+    <h1 style="text-align:center">Tebrikler</h1>
+}
+else
+{
+    <h1 style="text-align:center">Geçmiş Olsun</h1>
+}
+<br />
+<h2>Doğru sayısı</h2>
+<h3>@ViewBag.adam</h3>
+<br />
+<div style="text-align:center">
+    <a class="btn btn-lg btn-info" href="/Index/Index">Ana Sayfa</a>
+</div>
+
+

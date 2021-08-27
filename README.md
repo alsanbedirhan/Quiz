@@ -1,2 +1,2 @@
 # Quiz
- Kullanıcı etkileşimli quiz uygulaması
+ASP.NET Core MVC ile yazılmış kullanıcı etkileşimli quiz uygulaması
