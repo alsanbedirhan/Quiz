@@ -3,35 +3,52 @@
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
 
-<form method="post">
-    <div class="card" style="padding:10px">
-        <div class="card-header alert-primary">
-            <h3>Soru 1</h3>
-        </div>
+<style>
+    .card #tiktak{
 
-        <div class="card-body">
-            <h4>Bu bir sorudur?</h4>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="trya" id="exampleRadios1" value=1 required>
-                <label class="form-check-label" for="exampleRadios1">
-                    Evet bu bir sorudur
-                </label>
-                <br />
-                <input class="form-check-input" type="radio" name="trya" id="exampleRadios2" value=2>
-                <label class="form-check-label" for="exampleRadios2">
-                    hayır bu bir soru değildir
-                </label>
-                <br />
-                <input class="form-check-input" type="radio" name="trya" id="exampleRadios3" value=3>
-                <label class="form-check-label" for="exampleRadios3">
-                    hangi soru
-                </label>
+    }
+
+
+</style>
+<div id="tiktak">
+    <form method="post">
+        <div class="card" style="padding:10px">
+            <div class="card-header alert-primary">
+                <h3>Soru 1</h3>
             </div>
-        </div>
-        <div class="ml-auto" style="padding:10px">
-            <button class="btn btn-lg btn-primary" type="submit">İleri</button>
-        </div>
-    </div>
-</form>
 
+            <div class="card-body">
+                <h4>Bu bir sorudur?</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="trya" id="exampleRadios1" value=1 required>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Evet bu bir sorudur
+                    </label>
+                    <br />
+                    <input class="form-check-input" type="radio" name="trya" id="exampleRadios2" value=2>
+                    <label class="form-check-label" for="exampleRadios2">
+                        hayır bu bir soru değildir
+                    </label>
+                    <br />
+                    <input class="form-check-input" type="radio" name="trya" id="exampleRadios3" value=3>
+                    <label class="form-check-label" for="exampleRadios3">
+                        hangi soru
+                    </label>
+                </div>
+            </div>
 
+            <div class="row justify-content-center mt-2 mb-2">
+                <h4>Kalan Zamanınız</h4>
+            </div>
+            <div class="row justify-content-center border rounded-pill ml-4 mr-4 mb-2" id="countdown">
+
+            </div>
+
+            <div class="ml-auto" style="padding:10px">
+                <button class="btn btn-lg btn-primary" type="submit">İleri</button>
+            </div>
+
+        </div>
+    </form>
+
+</div>
